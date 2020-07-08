@@ -26,7 +26,7 @@ Regardless, there are a lot of optimizations and tweaks you can use to make angr
   You can enable it with the `angr.options.REPLACEMENT_SOLVER` state option.
   The replacement solver allows you to specify AST replacements that are applied at solve-time.
   If you add replacements so that all symbolic data is replaced with concrete data when it comes time to do the solve, the runtime is greatly reduced.
-  The API for adding a replacement is `state.se._solver.add_replacement(old, new)`.
+  The API for adding a replacement is `state.solver._solver.add_replacement(old, new)`.
   The replacement solver is a bit finicky, so there are some gotchas, but it'll definitely help.
 
 ## If you're performing lots of concrete or partially-concrete execution
